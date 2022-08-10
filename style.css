@@ -1,0 +1,117 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    max-width: 100%;
+}
+.container{
+   max-width: 25rem;
+}
+
+.page__one,
+.page__two{
+    background-color: hsl(213, 19%, 18%);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.logo{
+    background-color: hsla(216, 12%, 54%,0.2);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.page__one--heading{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.page__one--paragraph{
+    color: hsl(217, 12%, 63%);
+}
+
+.rating{
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating__numb{
+    color: hsl(217, 12%, 63%);
+    background-color: hsla(216, 12%, 54%,0.2);
+    padding: 1rem 1.35rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+}
+
+.rating__numb:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rating__numb--light{
+    background-color: hsl(216, 12%, 54%);
+}
+
+.submit__rating{
+    margin-top: 2rem;
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.submit__rating:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.page__two{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hide{
+    display:none;
+}
+
+.result{
+    background-color: hsla(216, 12%, 54%,0.2);
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    color: hsl(25, 97%, 53%);
+}
+
+.thanks{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.message{
+    text-align: center;
+    color:hsl(216, 12%, 54%);
+}
